@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "incremental": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "paths": {
+      "#/*": ["../src/*"]
+    },
+    "rootDirs": ["./", "../src"],
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES2018",
+    "tsBuildInfoFile": ".test.tsbuildinfo"
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["**/*.ts", "**/*.tsx"],
+  "references": [
+    {
+      "path": "../tsconfig.json"
+    }
+  ]
+}
